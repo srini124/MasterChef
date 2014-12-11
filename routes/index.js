@@ -7,3 +7,7 @@ router.get('/', function(req, res) {
 });
 
 module.exports = router;
+
+router.get('/recipe', function(req, res) {
+    res.render('recipe', { title: 'Hello, Master Chef!' })
+});
